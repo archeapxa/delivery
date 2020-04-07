@@ -7,7 +7,7 @@ const minify = require('gulp-minify');
 const htmlmin = require('gulp-htmlmin');
 const tinypng = require('gulp-tinypng-compress');
 // const rename = require('gulp-rename');
-const ftp = require('vinyl-ftp');
+// const ftp = require('vinyl-ftp');
 
 // sass
 function serveSass() {
@@ -91,22 +91,22 @@ function imagemin(done) {
 }
 
 
-function deploy(done) {
-  var conn = ftp.create({
-    host:      '136.243.147.150',
-    user:      'arche154_gulp',
-    password:  'gulp12345',
-    parallel:  10,
-  });
-  var globs = [
-    'dist/**',
-    ];
-  return src(globs, {buffer: false})
-    .pipe(conn.dest('/www/webstanislav.ru/school-market/'));
-}
+// function deploy(done) {
+//   var conn = ftp.create({
+//     host:      '136.243.147.150',
+//     user:      'arche154_gulp',
+//     password:  'gulp12345',
+//     parallel:  10,
+//   });
+//   var globs = [
+//     'dist/**',
+//     ];
+//   return src(globs, {buffer: false})
+//     .pipe(conn.dest('/www/webstanislav.ru/school-market/'));
+// }
 
 
 exports.serve = bs;
 exports.build = series(buildCSS, buildJS, html, php, fonts, imagemin);
 exports.html = html;
-exports.deploy = deploy;
+// exports.deploy = deploy;
