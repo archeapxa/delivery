@@ -1,0 +1,104 @@
+@media screen and ( max-width: 1290px )
+  .card
+    &__text
+      padding-bottom: 20px
+    &__info
+      &-category
+        order: -1
+        width: 100%
+  
+@media screen and ( max-width: 1200px )
+  .promo
+    &__wrapper
+      background-position: center right -200px
+      background-size: 600px
+
+@media screen and ( max-width: 992px )
+  html
+    font-size: 16px
+  .promo
+    &__text
+      max-width: 60%
+    &__wrapper
+      padding: 40px 50px
+      background-size: 500px
+  .card
+    &__title
+      font-size: 1.1rem
+    &__heading
+      margin-bottom: 0
+
+@media screen and ( max-width: 830px )
+  .card
+    flex-basis: 48.5%
+
+@media screen and ( max-width: 750px )
+  html
+    font-size: 14px
+  .promo
+    &__wrapper
+      background-size: 400px
+  .footer
+    padding: 30px 0
+    &__wrapper
+      flex-wrap: wrap
+      margin-right: 0
+    &__nav
+      order: -1
+      width: 100%
+      margin-left: 0
+      margin-bottom: 15px
+
+@media screen and ( max-width: 620px )
+  .header
+    &__row
+      flex-wrap: wrap
+    &__input
+      order: 1
+      width: 100%
+      flex: auto
+      margin-top: 20px
+  .promo
+    &__text
+      font-size: 1rem
+      line-height: 140%
+
+@media screen and ( max-width: 560px )
+  .cards
+    justify-content: space-around
+  .card
+    flex-basis: 100%
+    max-width: 384px
+  .promo
+    &__wrapper
+      background-image: none
+      padding: 30px 25px
+    &__text
+      max-width: 100%
+@media screen and ( max-width: 410px )
+  .button
+    &__text
+      display: none
+    &__icon
+      margin-right: 0
+  .promo
+    &__title
+      font-size: 1.8rem
+      line-height: 130%
+  .section
+    &-heading
+      flex-wrap: wrap
+  .restaurants
+    &__search
+      width: 100%
+      max-width: 100%
+      margin-top: 10px
+  .footer
+    &__nav
+      display: flex
+      justify-content: space-around
+      flex-wrap: wrap
+    &__link
+      flex-basis: 45%
+      &:not(:last-child)
+        margin-right: 0

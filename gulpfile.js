@@ -80,13 +80,13 @@ function fonts(done) {
 }
 
 function imagemin(done) {
-  // src('img/**/*.{png,jpg,jpeg}')
-  //   .pipe(tinypng({
-  //     key: 'QThwWb4y5m8SCkN037L9dsWYPt4J4xcp',
-  //     }))
-  //   .pipe(dest('dist/img/'));
-  // src('img/**/**.{svg,ico}')
-  //   .pipe(dest('dist/img/'));
+  src('img/**/*.{png,jpg,jpeg}')
+    // .pipe(tinypng({
+    //   key: 'QThwWb4y5m8SCkN037L9dsWYPt4J4xcp',
+    //   }))
+    .pipe(dest('dist/img/'));
+  src('img/**/**.{svg,ico}')
+    .pipe(dest('dist/img/'));
   done();
 }
 
